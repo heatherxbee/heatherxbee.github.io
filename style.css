@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+html{
+    font-family: 'Yeseva One', cursive;
+    box-sizing: border-box;
+    padding-left: 5%;
+
+}
+
+#skill-list{
+    list-style: decimal-leading-zero;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: centre;
+}
+
+body{
+    background-color: lightpink;
+    background-image: linear gradient(62deg,lightblue, light pink)
+
+}
+
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  }
+
+  li {
+    display: inline;
+  }
