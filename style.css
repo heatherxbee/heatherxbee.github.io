@@ -1,41 +1,50 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
 
 
 html{
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Lora', serif;
     box-sizing: border-box;
     padding-left: 5%;
-
 }
 
-#skill-list{
-    list-style: decimal-leading-zero;
-}
-
-h1{
-    font-size: 3em;
-    font-weight: bold;
-    text-align: centre;
-}
 
 body{
-    background-color: lightpink;
-    background-image: linear gradient(62deg,lightblue, light pink)
+    background-color: #FDF3DD;
 
 }
 
-
-.nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+.container {
+    display: flex;
   }
 
-  li {
-    display: inline;
+.column {
+    flex: 1;
+    padding: 20px;
   }
+
+#todolist {
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+  }
+
+
+#timer{
+    font-size: 10em;
+    font-weight: bold;
+    text-align: centre;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+    
+
+}
