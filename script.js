@@ -1,3 +1,5 @@
+"homepage": "http://gitname.github.io"
+
 function sayHello() {
     const name = prompt("what is your name?");
     alert(`hello ${name}! welcome to my website :>`);
