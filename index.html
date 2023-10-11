@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CFG-portfolio</title>
+    <title>pomodoro</title>
+    <link rel="icon" type="image/x-icon" href="icons/candle.png">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-	<script src="script.js"></script>
 
     <div class = "container">
-        <div class ="column">
-            <h1 id="timer">25:00</h1>
+        <div class ="column1">
+
+            <div id="timer-buttons">
+            <button id="focus" class="focus-button, button-74">focus</button>
+            <button id="shortbreak" class="short-button, button-74">short break</button>
+            <button id="longbreak" class="long-button, button-74">long break</button>
+            </div>
+
+            <div class="timer">
+                <span id="timer-minutes">25</span>
+                <span id="timer-part">:</span>
+                <span id="timer-seconds">00</span>
+            </div>
+
+            <div id="start-stop-buttons">
+            <button id="start" class="button-74">
+                <img class="icon-buttons" id="startimg" src="icons/play.png"></button>
+            <!-- <button id="pause" class="button-74">
+                <img class="icon-buttons" src="icons/pause.png"></button> -->
+            <button id="reset" class="button-74">
+                <img class="icon-buttons" src="icons/reload.png"></button>
+            </div>
+
         </div>
-        <div class="column">
-            <div id="todolist">
-                to do list
-              </div>
+        <div class="column2">
+          <image id="candleimg" src="icons/candle.png">
         </div>
      </div>
      <div style="clear:both"></div>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
