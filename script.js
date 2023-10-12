@@ -20,9 +20,18 @@ startButton.addEventListener("click", ()=>{ //if start button is clicked
     }
 });
 
-resetButton.addEventListener("click", ()=>{
-    remainingSeconds=active
-});
+resetButton.addEventListener("click", ()=>{//when rest button is clicked
+    stop();
+    if(active==="focus"){
+        focusMode();
+    }
+    if(active==="short"){
+        shortBreakMode();
+    }
+    if(active==="long")
+        longBreakMode();
+    }
+);
 
 focusButton.addEventListener("click", ()=>{
     if (active==="short"||active==="long"){
