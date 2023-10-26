@@ -5,42 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>pomodoro</title>
-    <link rel="icon" type="image/x-icon" href="candle.png">
+    <link rel="icon" type="image/x-icon" href="icons/candle.png">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
+    <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="themes.html">themes</a></li>
+        <li><a href="about.html">about</a></li>
+    </nav>
+    </header>
+
+    
     <div class = "container">
-        <div class ="column1">
+      <div class ="column1">
 
-            <div id="timer-buttons">
-            <button id="focus" class="focus-button, button-74">focus</button>
-            <button id="shortbreak" class="short-button, button-74">short break</button>
-            <button id="longbreak" class="long-button, button-74">long break</button>
-            </div>
-
-            <div class="timer">
-                <span id="timer-minutes">25</span>
-                <span id="timer-part">:</span>
-                <span id="timer-seconds">00</span>
-            </div>
-
-            <div id="start-stop-buttons">
-            <button id="start" class="button-74">
-                <img class="icon-buttons" id="startimg" src="play.png"></button>
-            <button id="reset" class="button-74">
-                <img class="icon-buttons" src="reload.png"></button>
-            </div>
-
+        <div id="timer-buttons">
+          <button id="focus" class="focus-button, button-74">focus</button>
+          <button id="shortbreak" class="short-button, button-74">short break</button>
+          <button id="longbreak" class="long-button, button-74">long break</button>
         </div>
+
+        <div class="timer">
+          <span id="timer-minutes">25</span>
+          <span id="timer-part">:</span>
+          <span id="timer-seconds">00</span>
+        </div>
+
+        <div id="start-stop-buttons">
+          <button id="start" class="icon-buttons button-74">
+            <img id="startimg" src="icons/play.png"></button>
+          <button id="reset" class="icon-buttons button-74">
+            <img id="resetimg" src="icons/reload.png"></button>
+        </div>
+
+        <div class="quotediv">
+          <h1 id="quote">focus until the candle burns out</h1>
+        </div>
+
+      </div>
+
         <div class="column2">
-          <image id="candleimg" src="candle.png">
+          <image id="candleimg" src="candle1.gif">
         </div>
      </div>
      <div style="clear:both"></div>
-
+  
     </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
+
