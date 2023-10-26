@@ -159,9 +159,9 @@ function updateTime() { //formats the seconds into time
 
 function updateControls(){ //togggles play/pause buttons
     if (interval=== null){ //timer is not running
-        document.getElementById("startimg").src = "icons/play.png" // display play 
+        document.getElementById("startimg").src = "play.png" // display play 
         }else{
-            document.getElementById("startimg").src = "icons/pause.png"; //display pause
+            document.getElementById("startimg").src = "pause.png"; //display pause
         }     
 };
 function start() { //start the timer
