@@ -1,62 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>pomodoro</title>
-    <link rel="icon" type="image/x-icon" href="candle0.png">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
+    <meta name="description" content="The Pomodoro Method is a time management method developed by francesco cirillo in the late 1980s.">
+    <meta property="og:title" content="Pomodoro">
+    <meta property="og:description" content="The Pomodoro Method is a time management method developed by Francesco Cirillo in the late 1980s. It's a popular approach for enhancing productivity, and it is great for dealing with procrastination, time management, and distractions!">
+    <meta property="og:image" content="https://heatherxbee.github.io/candle-og-meta.png">
+    <meta property="og:locale" content="en_GB"> <!-- NOTE: You have to use GB for "Great Britain" instead of UK. -->
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="themes.html">themes</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="grid-container">
+            <nav class="timer-buttons">
+                <button id="focus">focus</button>
+                <button id="shortbreak">short break</button>
+                <button id="longbreak">long break</button>
+            </nav>
+            <div class="candle">
+                <img id="candleimg" src="/candle1.gif">
+            </div>
 
-    <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="themes.html">themes</a></li>
-        <li><a href="about.html">about</a></li>
-    </nav>
-    </header>
-
+            <div class="timer">
+                <span id="timer-minutes">25</span><!---
+                --><span id="timer-part">:</span><!--
+                --><span id="timer-seconds">00</span>
+            </div>
     
-    <div class = "container">
-      <div class ="column1">
-
-        <div id="timer-buttons">
-          <button id="focus" class="focus-button, button-74">focus</button>
-          <button id="shortbreak" class="short-button, button-74">short break</button>
-          <button id="longbreak" class="long-button, button-74">long break</button>
+            <nav class="start-stop-buttons">
+                <button id="start"><img id="startimg" src="play.png"></button>
+                <button id="reset"><img id="resetimg" src="reload.png"></button>
+            </nav>
         </div>
 
-        <div class="timer">
-          <span id="timer-minutes">25</span>
-          <span id="timer-part">:</span>
-          <span id="timer-seconds">00</span>
-        </div>
-
-        <div id="start-stop-buttons">
-          <button id="start" class="icon-buttons button-74">
-            <img id="startimg" src="play.png"></button>
-          <button id="reset" class="icon-buttons button-74">
-            <img id="resetimg" src="reload.png"></button>
-        </div>
-
-        <div class="quotediv">
-          <h1 id="quote">focus until the candle burns out</h1>
-        </div>
-
-      </div>
-
-        <div class="column2">
-          <image id="candleimg" src="candle1.gif">
-        </div>
-     </div>
-     <div style="clear:both"></div>
-  
+        <p id="quote" class="quote">
+            focus until the candle burns out
+        </p>
     </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
-
+</html>
