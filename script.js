@@ -238,11 +238,11 @@ function changeMode(){//change theme
 function setOpenDyslexic(){//check for open dyslexic font
     if(sessionStorage.getItem("openDyslexic")==="active"){
         console.log("open dyslexic is active")
-        document.documentElement.style.fontFamily="Open-Dyslexic , sans-serif";
+        document.body.style.fontFamily="Open-Dyslexic , sans-serif";
         if (openDyslexicButton) {
             openDyslexicButton.innerHTML="on";}
     }else{
-        document.documentElement.style.fontFamily="IBM Plex Mono, monospace";
+        document.body.style.fontFamily="IBM Plex Mono, monospace";
         if (openDyslexicButton) {
             openDyslexicButton.innerHTML="off";}
     }
@@ -250,14 +250,14 @@ function setOpenDyslexic(){//check for open dyslexic font
 function setHyperlegible(){//checks for hyperlegible font
     if(sessionStorage.getItem("hyperlegible")==="active"){
         console.log("hyperlegible is active")
-        document.documentElement.style.fontFamily="Atkinson Hyperlegible, sans-serif";
-        document.documentElement.style.fontSize="20px";
+        document.body.style.fontFamily="Atkinson Hyperlegible, sans-serif";
+        document.body.style.fontSize="20px";
 
         if (hyperlegibleButton) {
             hyperlegibleButton.innerHTML="on";}
     }else{
-        document.documentElement.style.fontFamily="IBM Plex Mono, monospace";
-        document.documentElement.style.fontSize="16px";
+        document.body.style.fontFamily="IBM Plex Mono, monospace";
+        document.body.style.fontSize="16px";
         if (hyperlegibleButton) {
             hyperlegibleButton.innerHTML="off";}
 }}

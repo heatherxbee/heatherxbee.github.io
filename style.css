@@ -1,238 +1,154 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=IBM+Plex+Mono:wght@500&family=Lora:ital,wght@1,500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
 
-
-/*font-family: 'Open-Dyslexic', sans-serif;*/
-/*fomnt-family: 'Atkinson Hyperlegible', sans-serif;*/
-
-
-/* ------ main ------ */
 :root {
-  --main-color: #E8D3B3;
-  --second-color:#443726;
-  --third-color: #fbeee0; 
+    --main-color: #E8D3B3;
+    --second-color:#443726;
+    --third-color: #fbeee0; 
 }
 
-html{
-  font-family: 'IBM Plex Mono', monospace;
-  box-sizing: border-box;
-  padding-left: 5%;
-  color: var(--second-color);
+body {
+    background-color: var(--main-color);
+    font-family: 'IBM Plex Mono', monospace;
+    box-sizing: border-box;
+    color: var(--second-color);
 }
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
+
+header ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: var(--third-color);
+    border-radius: 50px;
+    border: 2px solid var(--second-color);
+    box-shadow: var(--second-color) 4px 4px 0 0;
+    color: var(--second-color);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px 20px;
+    margin: 10px;
+    line-height: 30px;
+    text-align: center; /* Commonwealth spellings like `centre` and `colour` are illegal in CSS. */
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none; 
+    touch-action: manipulation;
     display: flex;
-    align-items: center;
-}
-header * {
-    display: inline;
-}
-header li {
-  margin: 20px;
-}
-header li a {
-  color: #443726;
-  text-decoration: none;
-  font-size: 1.4em;
-}
-body{
-  background-color: var(--main-color);
-  padding-top:70px;
-}
-* {
-  box-sizing: border-box;
-}
-
-
-
-
-/* ------ id selectors ------ */
-
-#timer-buttons{
-    position: absolute;
-    top: 17%;
-    left:10%;
-    display: flex;
-    justify-content: center;
-
-}
-#start-stop-buttons{
-    position: absolute;
-    top: 65%;
-    left: 16.5%;
-    display: flex;
-    justify-content: center;
-}
-#candleimg{
-    height: 600px;
-    width: 400px;
-}
-
-#startimg{
-  height: 40px;
-  position:relative;
-  
-}
-#resetimg{
-  height: 45px;
-  position:relative;
-}
-
-
-
-
-
-/*------ class selectors ------*/
+    justify-content:center;
+    align-items:center;
+  }
+ button:hover {
+    background-color: var(--main-color);
+  }
+button:active {
+    box-shadow: var(--second-color) 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 700px;
-  align-content: flex-start;
-}
-.column1{
-  flex: 50%;
-  padding: 50px;
-  gap: 10px;
-  float: left;
-  height: 800px;
-  justify-content: center;
-  flex-direction: column;
-}
-.column2{
-  flex: 50%;
-  padding: 20px;
-  float: left;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-}
-.button{
-border: none;
-outline: none;
-cursor: pointer; 
-}
-.quotediv{
-position: absolute;
-top:75%;}
-
-#quote{
-  white-space: pre-line;
+    width: calc(375px - 2em);
+    margin: 0 auto;
 }
 
-.start{
-  position: absolute;
-  width: 50px;
-  height: 70px;
-  padding: 5px;
-  margin: 0px;
-}
 
-.reset{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-  margin: 0px;
-}
-
-/*.icon-buttons{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-}*/
-
-.timer{
-    font-size: 250px;
+.timer {
+    font-size: 100px;
     font-weight: bold;
     text-align: centre;
-    font-family: 'lora', sans-serif;
-    position: absolute;
-    top: 25%;
-    display: flex;
-    justify-content: center;
-}
-.button-74 {
-  background-color: var(--third-color);
-  border-radius: 50px;
-  border: 2px solid var(--second-color);
-  box-shadow: var(--second-color) 4px 4px 0 0;
-  color: var(--second-color);
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 20px;
-  font-family: inherit;
-  padding: 0px 20px;
-  margin: 10px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none; 
-  touch-action: manipulation;
-  display: flex;
-  justify-content:center;
-  align-items:center;
-}
-.button-74:hover {
-  background-color: var(--main-color);
-}
-.button-74:active {
-  box-shadow: var(--second-color) 2px 2px 0 0;
-  transform: translate(2px, 2px);
+    font-family: 'lora', 'Palatino Linotype', 'Palatino', 'Book Antiqua', serif;
+    text-align: center;
+    grid-area: timer;
 }
 
-.about-page{
-  margin: 100px;
+.candle {
+    height: 302px;
+    object-fit: scale-down;
+    grid-area: candle;
 }
 
-
-
-
-
-/* ------ themes page ------ */
-.themes-page{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-.style-buttons{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-.style-dividers{
-  border: 2px solid var(--second-color);
-  width: 90%;
-  margin-top: 50px;
+.candle img {
+    height: calc(540px/2);
+    object-fit: scale-down;
 }
 
-
-
-/*------ screen widths ------*/
-
-@media (min-width: 768px) {
-  .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
+.grid-container {
+    display: grid;
+    grid-template-areas: 'menu candle' 'timer timer' 'start start';
 }
 
-@media (max-width: 1000px) {
-  .flex-container {
-    flex-direction: column;
-  }
+nav.timer-buttons button {
+    grid-area: menu;
+}
+
+nav.start-stop-buttons {
+    grid-area: start;
+    text-align: center;
+}
+nav.start-stop-buttons button {
+    display: inline-block;
+}
+
+#start, #reset {
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+#startimg, #resetimg {
+    height: 45px;
+    
+}
+
+p.quote {
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 640px) {
+    .container {
+        width: auto;
+        max-width: 960px;
+        padding: 0 1em;
+    }
+    nav.timer-buttons button {
+        display: inline-block;
+    }
+
+    nav.timer-buttons {
+        min-width: 530px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'menu candle' 'timer candle' 'start candle'
+    }
+    
+    .candle {
+        height: 540px;
+    }
+
+    .candle img {
+        height: 540px;
+    }
+
+    .timer {
+        text-align: left;
+        font-size: 200px;
+    }
+
+    p.quote {
+        font-size: 36px;
+    }
 }
